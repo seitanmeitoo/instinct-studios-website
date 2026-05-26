@@ -3,12 +3,93 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Instinct Studios</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#131313" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>Instinct Studios — Accompagnement créateurs YouTube & montage vidéo</title>
+  <meta name="description" content="Instinct Studios accompagne les créateurs YouTube de A à Z : recherche d'idées, scripts, dérush, montage Premiere Pro, gestion d'équipe et analyse des performances. Suivi hebdomadaire à partir de 99€/mois." />
+  <meta name="keywords" content="accompagnement youtube, formation montage vidéo, premiere pro, créateur de contenu, stratégie youtube, montage pro" />
+  <meta name="author" content="Instinct Studios" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://instinct-studios.fr/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Instinct Studios" />
+  <meta property="og:url" content="https://instinct-studios.fr/" />
+  <meta property="og:title" content="Instinct Studios — Accompagnement créateurs YouTube" />
+  <meta property="og:description" content="Accompagnement complet pour créateurs YouTube : montage, scripts, stratégie, analytics. Suivi hebdomadaire à partir de 99€/mois." />
+  <meta property="og:image" content="https://instinct-studios.fr/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Instinct Studios — accompagnement créateurs YouTube" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Instinct Studios — Accompagnement créateurs YouTube" />
+  <meta name="twitter:description" content="Accompagnement complet pour créateurs YouTube : montage, scripts, stratégie, analytics." />
+  <meta name="twitter:image" content="https://instinct-studios.fr/og-cover.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+  <link rel="dns-prefetch" href="https://media.discordapp.net" />
+  <link rel="dns-prefetch" href="https://preview.redd.it" />
+
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" /></noscript>
+
+  <link rel="preload" as="style"
+        href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" /></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Instinct Studios",
+    "description": "Accompagnement créateurs YouTube : recherche d'idées, scripts, montage Premiere Pro, gestion d'équipe et analyse des performances.",
+    "url": "https://instinct-studios.fr/",
+    "image": "https://instinct-studios.fr/og-cover.jpg",
+    "founder": {
+      "@type": "Person",
+      "name": "LAST",
+      "url": "https://www.youtube.com/@Lasteuuuuu",
+      "jobTitle": "Accompagnateur créateurs YouTube",
+      "sameAs": [
+        "https://www.youtube.com/@Lasteuuuuu",
+        "https://cal.com/instinct-studios"
+      ]
+    },
+    "areaServed": "FR",
+    "priceRange": "99€ – 149€ / mois",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Pack Montage",
+        "price": "99",
+        "priceCurrency": "EUR",
+        "url": "https://cal.com/instinct-studios/30min"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pack Création",
+        "price": "149",
+        "priceCurrency": "EUR",
+        "url": "https://cal.com/instinct-studios/30min"
+      }
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -22,6 +103,10 @@
       --font-display: 'Outfit', 'Satoshi', sans-serif;
       --font-accent: 'Playfair Display', Georgia, serif;
       --premium: #d2b173;
+      --space-section: clamp(72px, 9vw, 130px);
+      --space-gutter: clamp(20px, 5vw, 96px);
+      --radius-card: clamp(20px, 2.6vw, 30px);
+      --tap-min: 44px;
     }
     html { scroll-behavior: smooth; scroll-padding-top: 120px; }
     body {
@@ -103,9 +188,9 @@
     .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
     .nav-links a { color: var(--muted); text-decoration: none; font-size: .78rem; letter-spacing: .04em; transition: color .25s ease; }
     .nav-links a:hover { color: #fff; }
-    .nav-contact { color: #fff !important; border: 1px solid var(--border); border-radius: 999px; padding: 10px 20px; }
+    .nav-contact { color: #fff !important; border: 1px solid var(--border); border-radius: 999px; padding: 12px 22px; min-height: var(--tap-min); display: inline-flex; align-items: center; }
 
-    .section { position: relative; padding: 110px 6vw; background: transparent; }
+    .section { position: relative; padding: var(--space-section) var(--space-gutter); background: transparent; }
     .section-kicker { color: var(--muted); text-transform: uppercase; letter-spacing: .22em; font-size: .68rem; margin-bottom: 28px; }
 
     .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 110px; padding-bottom: 60px; }
@@ -231,14 +316,14 @@
     .bandeau-track .italic { font-style: italic; font-weight: 400; }
     .bandeau-track .bold { font-weight: 900; color: rgba(255,255,255,0.7); }
 
-    .about-grid { display: grid; grid-template-columns: 390px minmax(0,1fr); gap: 56px; align-items: center; margin-bottom: 90px; }
+    .about-grid { display: grid; grid-template-columns: minmax(260px, 30%) minmax(0,1fr); gap: clamp(32px, 5vw, 56px); align-items: center; margin-bottom: clamp(48px, 8vw, 90px); }
     .section-title { font-size: clamp(3rem, 6.5vw, 7rem); font-weight: 900; letter-spacing: -0.06em; line-height: .95; margin-bottom: 36px; font-family: var(--font-display); }
     .about-tagline { font-size: clamp(1.1rem, 1.8vw, 1.4rem); font-weight: 600; color: rgba(255,255,255,0.8); margin-bottom: 24px; line-height: 1.4; }
     .about-desc { color: var(--muted); line-height: 1.85; font-size: 1rem; max-width: 620px; }
     .about-desc strong { color: rgba(255,255,255,0.9); font-weight: 700; }
     .about-desc em { color: rgba(255,255,255,0.65); font-style: italic; }
     .about-desc u { text-decoration: underline; text-decoration-color: rgba(255,255,255,0.3); text-underline-offset: 3px; }
-    .profile-wrap { position: relative; width: 310px; height: 310px; margin-inline: auto; transform: translateX(0); }
+    .profile-wrap { position: relative; width: clamp(220px, 28vw, 320px); aspect-ratio: 1 / 1; margin-inline: auto; transform: translateX(0); }
     .profile-ring {
       position: absolute; inset: -10px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.15); animation: profileSpin 12s linear infinite;
     }
@@ -247,7 +332,7 @@
     }
     @keyframes profileSpin { to { transform: rotate(360deg); } }
     .profile-img-wrap {
-      width: 310px; height: 310px; border-radius: 50%; overflow: hidden; border: 2px solid rgba(255,255,255,0.12);
+      width: 100%; aspect-ratio: 1 / 1; border-radius: 50%; overflow: hidden; border: 2px solid rgba(255,255,255,0.12);
       transition: transform .18s ease, box-shadow .35s ease, filter .35s ease;
       background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.15), rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.02) 60%);
       display: flex; align-items: center; justify-content: center; box-shadow: 0 18px 60px rgba(0,0,0,0.45);
@@ -341,7 +426,7 @@
 
     .citation-section {
       min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
-      position: relative; overflow: hidden; padding: 100px 6vw 88px;
+      position: relative; overflow: hidden; padding: var(--space-section) var(--space-gutter);
       background: transparent;
       margin-bottom: -12px;
     }
@@ -359,48 +444,19 @@
       mix-blend-mode: normal;
       will-change: transform;
     }
-    .bubble-img.b1 { width: 270px; height: 188px; left: 2%; top: 5%; animation-duration: 14s; --drift-x: 8px; --drift-y: -14px; }
-    .bubble-img.b2 { width: 280px; height: 166px; right: 2%; top: 8%; animation-duration: 16s; animation-delay: -3s; --drift-x: -9px; --drift-y: 12px; }
-    .bubble-img.b3 { width: 270px; height: 168px; left: 22%; bottom: 7%; animation-duration: 15s; animation-delay: -5s; --drift-x: 10px; --drift-y: -10px; }
-    .bubble-img.b4 { width: 208px; height: 132px; right: 12%; bottom: 17%; animation-duration: 13s; animation-delay: -2s; --drift-x: -8px; --drift-y: 10px; }
-    .bubble-img.b5 { width: 232px; height: 140px; left: 40%; top: 4%; animation-duration: 18s; animation-delay: -7s; --drift-x: 7px; --drift-y: -10px; }
-    .bubble-img.b6 { width: 196px; height: 122px; left: 6%; bottom: 36%; animation-duration: 17s; animation-delay: -4s; --drift-x: 9px; --drift-y: 8px; }
-    .bubble-img.b7 { width: 204px; height: 126px; right: 4%; top: 54%; animation-duration: 14.5s; animation-delay: -6s; --drift-x: -10px; --drift-y: -8px; }
-    .bubble-img.b8 { width: 260px; height: 160px; left: 34%; bottom: 2%; animation-duration: 16.5s; animation-delay: -8s; --drift-x: 8px; --drift-y: 10px; }
-    .bubble-img.b9 { width: 196px; height: 116px; right: 27%; top: 2%; animation-duration: 15.5s; animation-delay: -1s; --drift-x: -7px; --drift-y: -12px; }
-    @media (min-width: 761px) {
-      .bubble-img.b1 { left: 2%; top: 5%; }
-      .bubble-img.b2 { right: 2%; top: 8%; }
-      .bubble-img.b3 { left: 20%; bottom: 8%; }
-      .bubble-img.b4 { right: 10%; bottom: 17%; }
-      .bubble-img.b5 { left: 43%; top: 4%; }
-      .bubble-img.b6 { left: 6%; bottom: 35%; }
-      .bubble-img.b7 { right: 4%; top: 55%; }
-      .bubble-img.b8 { left: 35%; bottom: 2%; }
-      .bubble-img.b9 { right: 26%; top: 2%; }
-    }
-    @media (max-width: 760px) {
-      .bubble-img { position: relative; left: auto !important; right: auto !important; top: auto !important; bottom: auto !important; margin: 0; width: 100% !important; height: 150px !important; }
-      .citation-bg-bubbles {
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 0 10px;
-      }
-      .step-expand-content { padding: 0 18px 22px 88px; }
-      .step-expand-layout { grid-template-columns: 1fr; gap: 14px; }
-      .step-media-box { aspect-ratio: 16 / 9; }
-    }
+    .bubble-img.b1 { width: clamp(180px, 18vw, 270px); aspect-ratio: 270 / 188; left: 2%; top: 5%; animation-duration: 14s; --drift-x: 8px; --drift-y: -14px; }
+    .bubble-img.b2 { width: clamp(180px, 19vw, 280px); aspect-ratio: 280 / 166; right: 2%; top: 8%; animation-duration: 16s; animation-delay: -3s; --drift-x: -9px; --drift-y: 12px; }
+    .bubble-img.b3 { width: clamp(180px, 18vw, 270px); aspect-ratio: 270 / 168; left: 22%; bottom: 7%; animation-duration: 15s; animation-delay: -5s; --drift-x: 10px; --drift-y: -10px; }
+    .bubble-img.b4 { width: clamp(150px, 14vw, 208px); aspect-ratio: 208 / 132; right: 12%; bottom: 17%; animation-duration: 13s; animation-delay: -2s; --drift-x: -8px; --drift-y: 10px; }
+    .bubble-img.b5 { width: clamp(160px, 16vw, 232px); aspect-ratio: 232 / 140; left: 40%; top: 4%; animation-duration: 18s; animation-delay: -7s; --drift-x: 7px; --drift-y: -10px; }
+    .bubble-img.b6 { width: clamp(150px, 13vw, 196px); aspect-ratio: 196 / 122; left: 6%; bottom: 36%; animation-duration: 17s; animation-delay: -4s; --drift-x: 9px; --drift-y: 8px; }
+    .bubble-img.b7 { width: clamp(150px, 14vw, 204px); aspect-ratio: 204 / 126; right: 4%; top: 54%; animation-duration: 14.5s; animation-delay: -6s; --drift-x: -10px; --drift-y: -8px; }
+    .bubble-img.b8 { width: clamp(180px, 17vw, 260px); aspect-ratio: 260 / 160; left: 34%; bottom: 2%; animation-duration: 16.5s; animation-delay: -8s; --drift-x: 8px; --drift-y: 10px; }
+    .bubble-img.b9 { width: clamp(150px, 13vw, 196px); aspect-ratio: 196 / 116; right: 27%; top: 2%; animation-duration: 15.5s; animation-delay: -1s; --drift-x: -7px; --drift-y: -12px; }
     @keyframes bubbleFloat {
       0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
       50% { transform: translate3d(var(--drift-x, 0px), var(--drift-y, -12px), 0) scale(1.01); }
     }
- {
-      0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-      50% { transform: translate3d(var(--drift-x, 0px), var(--drift-y, -12px), 0) scale(1.01); }
-    }
-33% { transform: translateY(-18px) rotate(1deg); } 66% { transform: translateY(10px) rotate(-1deg); } }
     @keyframes screenHover { 0%,100% { filter: saturate(.95) contrast(1); } 50% { filter: saturate(1.06) contrast(1.03); } }
     .citation-text { font-size: clamp(1.8rem, 4.5vw, 4.5rem); font-weight: 900; letter-spacing: -0.05em; line-height: 1.15; max-width: 1050px; position: relative; z-index: 2; font-family: var(--font-display); }
     .cite-highlight-wrap {
@@ -450,7 +506,7 @@
     .tarif-card {
       border: 1.5px solid var(--border-soft); background: rgba(255,255,255,0.018); border-radius: 30px; padding: 38px 30px;
       transition: transform .25s var(--ease), border-color .3s ease, box-shadow .4s ease, background .35s ease;
-      position: relative; overflow: hidden; width: 300px; min-height: 100%;
+      position: relative; overflow: hidden; width: clamp(280px, 32vw, 360px); min-height: 100%;
     }
     .tarif-card:hover { box-shadow: 0 24px 70px rgba(0,0,0,0.22); }
     .tarif-featured {
@@ -580,11 +636,6 @@
     }
     .booking-form textarea { min-height: 120px; resize: vertical; }
     .booking-form .button { width: 100%; margin-top: 18px; }
-    @media (max-width: 900px) {
-      .booking-grid { grid-template-columns: 1fr; }
-      .booking-calendar { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.08); }
-      .booking-shell iframe { height: 560px; }
-    }
 
     .discord-copy { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; color: var(--muted); font-size: .92rem; }
     .discord-tag {
@@ -597,7 +648,7 @@
     .copy-feedback { color: rgba(255,255,255,0.7); font-size: .76rem; letter-spacing: .06em; text-transform: uppercase; opacity: 0; transform: translateY(4px); transition: opacity .3s ease, transform .3s ease; }
     .copy-feedback.show { opacity: 1; transform: translateY(0); }
 
-    .footer { border-top: 1px solid rgba(255,255,255,0.01); padding: 0 6vw 32px; position: relative; z-index: 1; background: transparent; margin-top: -1px; }
+    .footer { border-top: 1px solid rgba(255,255,255,0.01); padding: 0 var(--space-gutter) 32px; position: relative; z-index: 1; background: transparent; margin-top: -1px; }
     .footer-clock { display: flex; flex-direction: column; align-items: center; padding: 52px 0 32px; border-bottom: 1px solid rgba(255,255,255,0.01); margin-bottom: 40px; background: transparent; }
     .clock-label { color: var(--muted-2); text-transform: uppercase; letter-spacing: .22em; font-size: .65rem; margin-bottom: 10px; }
     .clock-time { font-size: clamp(2.4rem, 5vw, 5rem); font-weight: 900; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; font-family: var(--font-display); word-spacing: 0.08em; }
@@ -618,7 +669,73 @@
     .reveal-highlight { opacity: 0; transform: translateY(30px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
     .reveal-highlight.visible { opacity: 1; transform: translateY(0); }
 
-    @media (max-width: 1100px) {
+    .nav-toggle {
+      display: none;
+      width: 44px; height: 44px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+      border-radius: 12px;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      transition: background .2s ease, border-color .2s ease;
+    }
+    .nav-toggle:hover, .nav-toggle:focus-visible { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.25); outline: none; }
+    .nav-toggle svg { display: block; }
+    .nav-toggle .icon-close { display: none; }
+    .nav-toggle[aria-expanded="true"] .icon-burger { display: none; }
+    .nav-toggle[aria-expanded="true"] .icon-close { display: block; }
+
+    .mobile-drawer {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 690;
+      background: rgba(10,10,10,0.96);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 80px 24px 40px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: opacity .35s var(--ease), transform .35s var(--ease), visibility .35s;
+    }
+    .mobile-drawer.open { opacity: 1; visibility: visible; transform: translateY(0); }
+    .mobile-drawer a {
+      color: #fff;
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 5vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      padding: 14px 20px;
+      min-height: var(--tap-min);
+      width: 100%;
+      max-width: 320px;
+      text-align: center;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: background .2s ease, border-color .2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .mobile-drawer a:hover, .mobile-drawer a:focus-visible { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.18); outline: none; }
+    body.drawer-open { overflow: hidden; }
+
+    a:focus-visible, button:focus-visible, .button:focus-visible {
+      outline: 2px solid rgba(255,255,255,0.7);
+      outline-offset: 3px;
+      border-radius: 999px;
+    }
+
+    .bandeau-track, .keyword-bubble, .bubble-img, .tarif-glow, .profile-ring, .hero-stat { will-change: transform; }
+
+    @media (max-width: 1024px) {
       .about-grid { grid-template-columns: 1fr; }
       .about-left, .about-right { display: flex; flex-direction: column; justify-content: center; }
       .tools-grid { grid-template-columns: repeat(2, 1fr); }
@@ -626,11 +743,17 @@
       .hero-aside { min-height: 260px; }
       .keyword-cloud { height: 260px; max-width: 520px; margin: 0 auto; }
       .hero-title { max-width: 14ch; }
+      .booking-grid { grid-template-columns: 1fr; }
+      .booking-calendar { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+      .booking-shell iframe { height: 560px; }
+      .step-expand-layout { grid-template-columns: 1fr; gap: 14px; }
+      .step-media-box { aspect-ratio: 16 / 9; }
     }
-    @media (max-width: 760px) {
-      .navbar { padding: 20px 22px; }
+
+    @media (max-width: 768px) {
+      .navbar { padding: 16px 18px; }
       .nav-links { display: none; }
-      .section { padding: 80px 22px; }
+      .nav-toggle { display: inline-flex; }
       .hero { padding-top: 100px; }
       .tools-grid { grid-template-columns: 1fr; }
       .tarif-card { width: 100%; }
@@ -639,16 +762,50 @@
       .citation-text { font-size: clamp(1.4rem, 6vw, 2.5rem); }
       .hero-stats { gap: 14px; }
       .hero-stat { min-width: 100%; }
-      .profile-wrap, .profile-img-wrap { width: 270px; height: 270px; }
       .hero-title { max-width: 100%; }
-      .step-shell { grid-template-columns: 56px minmax(0,1fr) 42px; gap: 14px; padding: 22px 18px; }
-      .step-expand-content { padding: 0 18px 22px 88px; }
+      .step-shell { grid-template-columns: 52px minmax(0,1fr) 40px; gap: 12px; padding: 20px 16px; }
+      .step-expand-content { padding: 0 16px 20px 80px; }
       .keyword-cloud { height: 300px; }
       .keyword-bubble { font-size: .68rem; padding: 10px 14px; }
       .contact-title { font-size: clamp(3.4rem, 18vw, 6.4rem); }
+      .tarifs-grid { gap: 14px; }
+      .bubble-img {
+        position: relative;
+        left: auto !important; right: auto !important; top: auto !important; bottom: auto !important;
+        margin: 0;
+        width: 100% !important;
+        aspect-ratio: 16 / 9 !important;
+        height: auto !important;
+      }
+      .citation-bg-bubbles {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 10px;
+      }
     }
+
+    @media (max-width: 480px) {
+      .navbar { padding: 14px 14px; }
+      .button { min-height: 48px; padding: 0 22px; font-size: .74rem; }
+      .hero-actions { gap: 10px; }
+      .hero-actions .button { flex: 1 1 100%; }
+      .step-shell { grid-template-columns: 44px minmax(0,1fr) 36px; gap: 10px; padding: 18px 14px; }
+      .step-expand-content { padding: 0 14px 18px 14px; }
+      .tarif-card { padding: 30px 22px; }
+      .booking-shell iframe { height: 480px; }
+      .clock-time { font-size: clamp(2rem, 8vw, 3rem); }
+      .discord-tag { padding: 12px 18px; min-height: var(--tap-min); }
+    }
+
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+      }
     }
   </style>
 </head>
@@ -656,15 +813,26 @@
   <div class="scroll-line"><div class="scroll-line-fill" id="scrollLineFill"></div></div>
   <div id="intro"><div class="intro-logo-wrap"><div class="intro-word-block">INSTINCT STUDIOS</div></div></div>
 
-  <nav class="navbar" id="navbar">
-    <a href="#" class="logo">INSTINCT STUDIOS.</a>
+  <nav class="navbar" id="navbar" aria-label="Navigation principale">
+    <a href="#" class="logo" aria-label="Instinct Studios — accueil">INSTINCT STUDIOS.</a>
     <ul class="nav-links">
       <li><a href="#about">À propos</a></li>
       <li><a href="#capacites">Capacités</a></li>
       <li><a href="#tarifs-grid-anchor">Tarifs</a></li>
       <li><a href="https://cal.com/instinct-studios/30min" target="_blank" rel="noopener noreferrer" class="nav-contact">Contact</a></li>
     </ul>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Ouvrir le menu">
+      <svg class="icon-burger" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
   </nav>
+
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <a href="#about" data-drawer-link>À propos</a>
+    <a href="#capacites" data-drawer-link>Capacités</a>
+    <a href="#tarifs-grid-anchor" data-drawer-link>Tarifs</a>
+    <a href="https://cal.com/instinct-studios/30min" target="_blank" rel="noopener noreferrer" data-drawer-link>Contact</a>
+  </div>
 
   <div id="page">
     <section class="hero section">
@@ -674,7 +842,7 @@
           <div class="hero-copy">
             <p class="eyebrow reveal">Accompagnement Créateur — 2026</p>
             <h1 class="hero-title" id="heroTitle">
-              <span class="title-line"><span>Accompagnement pour création
+              <span class="title-line"><span>Accompagnement pour création</span></span>
               <span class="title-line"><span><span class="title-accent glow-content">de contenu.</span></span></span>
             </h1>
             <p class="hero-sub reveal">Je sais exactement ce qu'il te manque — maintenant et dans six mois.</p>
@@ -722,7 +890,7 @@
             <div class="profile-ring"></div>
             <a href="https://www.youtube.com/@Lasteuuuuu" target="_blank" rel="noopener noreferrer" aria-label="Voir la chaîne LAST sur YouTube" style="display:block; border-radius:50%; line-height:0;">
               <div class="profile-img-wrap" id="profileImg" aria-label="Photo de profil" style="cursor:pointer;">
-                <img src="https://preview.redd.it/since-i-just-finished-monster-heres-some-tenma-fanart-v0-0biou1ejn6je1.jpg?width=1080&crop=smart&auto=webp&s=09de5a0f6a973bcfee277aa75668201f16ceba26" alt="Photo de profil Instinct Studios" loading="lazy" width="620" height="620">
+                <img src="https://preview.redd.it/since-i-just-finished-monster-heres-some-tenma-fanart-v0-0biou1ejn6je1.jpg?width=1080&crop=smart&auto=webp&s=09de5a0f6a973bcfee277aa75668201f16ceba26" alt="Photo de profil — créateur Instinct Studios" loading="eager" fetchpriority="high" decoding="async" width="620" height="620">
               </div>
             </a>
           </div>
@@ -740,7 +908,7 @@
         <p class="tools-label">Mes outils</p>
         <div class="tools-grid">
           <a href="https://notion.so" target="_blank" rel="noopener noreferrer" class="tool-card tilt-card"><div class="tool-icon"><svg width="42" height="42" viewBox="0 0 24 24" fill="currentColor"><path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933z"/></svg></div><h3>Notion</h3><p>Workspace de gestion de projet, scripts, calendrier éditorial.</p><span class="tool-link">notion.so ↗</span></a>
-          <a href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noopener noreferrer" class="tool-card tilt-card"><div class="tool-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="Logo Adobe Premiere Pro" loading="lazy" width="42" height="42"></div><h3>Premiere Pro</h3><p>Montage vidéo avancé, color grading, exports multi-plateformes.</p><span class="tool-link">adobe.com ↗</span></a>
+          <a href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noopener noreferrer" class="tool-card tilt-card"><div class="tool-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="Logo Adobe Premiere Pro" loading="lazy" decoding="async" width="42" height="42"></div><h3>Premiere Pro</h3><p>Montage vidéo avancé, color grading, exports multi-plateformes.</p><span class="tool-link">adobe.com ↗</span></a>
           <a href="https://ticktick.com" target="_blank" rel="noopener noreferrer" class="tool-card tilt-card"><div class="tool-icon" style="color:#4ecdc4"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></div><h3>TickTick</h3><p>Gestion des tâches, deadlines et suivi de production au quotidien.</p><span class="tool-link">ticktick.com ↗</span></a>
           <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="tool-card tilt-card"><div class="tool-icon" style="color:#d4a27f"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Claude</h3><p>IA pour rédiger des scripts, structurer des idées et booster la créativité.</p><span class="tool-link">claude.ai ↗</span></a>
         </div>
@@ -751,17 +919,27 @@
       <p class="section-kicker reveal">Capacités</p>
       <h2 class="capacites-title reveal-highlight">Comment je gère vos projets ?</h2>
       <div class="steps-container" id="stepsContainer">
-        <div class="step-card" data-step="0"><div class="step-shell"><div class="step-num">01</div><div class="step-main"><h3 class="step-title">🧠 Trouver un concept</h3><p class="step-preview">Identifier une idée forte qui a un vrai potentiel avant même le tournage.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p>Avant même de tourner, tout repose sur l'idée. J'analyse les <strong>tendances</strong>, les <span class="text-mark">niches porteuses</span> et les <em>formats qui fonctionnent</em> sur ta plateforme pour trouver un <strong>concept original</strong> avec un <span class="text-mark">fort potentiel de vues</span>.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797206285647892/image.png?ex=6a16d866&is=6a1586e6&hm=66bb1cff8c4db7e03e9d1dfde768d1bbfd3f9e4f8fbd516205d644875525c3c9&=&format=webp&quality=lossless&width=912&height=525" alt="Illustration" loading="lazy"></div></div><div class="step-label">Découvrir</div></div></div></div></div>
-        <div class="step-card" data-step="1"><div class="step-shell"><div class="step-num">02</div><div class="step-main"><h3 class="step-title">🎬 Organiser le tournage</h3><p class="step-preview">Préparer les étapes et le cadre pour que tout avance sans perte de temps.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p>Un bon tournage se planifie à l'avance. Je prépare le <strong>planning</strong>, les <span class="text-mark">listes de shots</span> et coordonne les équipes pour que le jour J se déroule <em>sans accroc</em>.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797867307958383/tournage.png?ex=6a16d903&is=6a158783&hm=4cf38a62fab7f8c5ed4d093474f0c135947bef84aefa986c45140fe0b6dd7a9f&=&format=webp&quality=lossless&width=912&height=513" alt="Illustration" loading="lazy"></div></div><div class="step-label">Structurer</div></div></div></div></div>
-        <div class="step-card" data-step="2"><div class="step-shell"><div class="step-num">03</div><div class="step-main"><h3 class="step-title">✍️ Écrire le script</h3><p class="step-preview">Construire un rythme pensé pour la rétention, le hook et la clarté.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p>Le script, c'est l'<strong>épine dorsale</strong> de ta vidéo. J'apprends à rédiger des scripts pensés pour la <strong>rétention</strong> : <em>accroche percutante</em>, <span class='text-mark'>rythme maîtrisé</span>, <strong>appel à l'action naturel</strong>. Chaque mot compte.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797422934167692/image.png?ex=6a16d899&is=6a158719&hm=01d3305408f57c5548fa1879dcd5590d29169e6807e43c806786be260910f6a0&=&format=webp&quality=lossless" alt="Illustration" loading="lazy"></div></div><div class="step-label">Construire</div></div></div></div></div>
-        <div class="step-card" data-step="3"><div class="step-shell"><div class="step-num">04</div><div class="step-main"><h3 class="step-title">🗂️ Dérush</h3><p class="step-preview">Trier, sélectionner et préparer une base de travail propre pour le montage.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p>Le <strong>dérushage</strong>, c'est trouver <em>l'or</em> dans des heures de rush. J'apprends à sélectionner les <span class='text-mark'>meilleures prises</span>, à organiser les dossiers et à préparer un projet Premiere Pro <strong>propre</strong> et <em>prêt au montage</em>.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797804846387330/derush.png?ex=6a16d8f4&is=6a158774&hm=f692bd943f58a28e207d107d97bbf65aaaad6042b96e737d4b94549aed310d5e&=&format=webp&quality=lossless&width=912&height=513" alt="Illustration" loading="lazy"></div></div><div class="step-label">Trier</div></div></div></div></div>
-        <div class="step-card" data-step="4"><div class="step-shell"><div class="step-num">05</div><div class="step-main"><h3 class="step-title">✂️ Montage</h3><p class="step-preview">Transformer les rushs en vidéo claire, dense et agréable à regarder.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p><strong>Rythme</strong>, <span class='text-mark'>transitions</span>, <em>sound design</em>, <strong>motion graphics</strong>, <span class='text-mark'>color grading</span> — je transforme des rushes bruts en une vidéo qui <strong>accroche</strong> et <em>retient l'audience</em> jusqu'à la fin.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797827273326612/montage.png?ex=6a16d8fa&is=6a15877a&hm=c9c9b08384ae1350b04f37b5ec7429b0f93a987e26786412348c7dea58d44c7d&=&format=webp&quality=lossless&width=912&height=513" alt="Illustration" loading="lazy"></div></div><div class="step-label">Assembler</div></div></div></div></div>
-        <div class="step-card" data-step="5"><div class="step-shell"><div class="step-num">06</div><div class="step-main"><h3 class="step-title">📈 Analyse</h3><p class="step-preview">Lire les signaux clés après publication pour améliorer chaque vidéo suivante.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p>Après la publication, le travail continue. J'analyse YouTube Studio en profondeur : <strong>rétention</strong>, <span class='text-mark'>CTR</span>, <em>sources de trafic</em> — pour affiner la <strong>stratégie</strong> à chaque vidéo.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797679168393267/image.png?ex=6a16d8d6&is=6a158756&hm=46f1feebd7c285a5fd96c9d9e9b53cceeebec6d60a1d665dce05c5a8488545b4&=&format=webp&quality=lossless&width=912&height=468" alt="Illustration" loading="lazy"></div></div><div class="step-label">Optimiser</div></div></div></div></div>
+        <div class="step-card" data-step="0"><div class="step-shell"><div class="step-num">01</div><div class="step-main"><h3 class="step-title">🧠 Trouver un concept</h3><p class="step-preview">Identifier une idée forte qui a un vrai potentiel avant même le tournage.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p>Avant même de tourner, tout repose sur l'idée. J'analyse les <strong>tendances</strong>, les <span class="text-mark">niches porteuses</span> et les <em>formats qui fonctionnent</em> sur ta plateforme pour trouver un <strong>concept original</strong> avec un <span class="text-mark">fort potentiel de vues</span>.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797206285647892/image.png?ex=6a16d866&is=6a1586e6&hm=66bb1cff8c4db7e03e9d1dfde768d1bbfd3f9e4f8fbd516205d644875525c3c9&=&format=webp&quality=lossless&width=912&height=525" alt="Recherche d'idées et de concepts vidéo" loading="lazy" decoding="async" width="912" height="525"></div></div><div class="step-label">Découvrir</div></div></div></div></div>
+        <div class="step-card" data-step="1"><div class="step-shell"><div class="step-num">02</div><div class="step-main"><h3 class="step-title">🎬 Organiser le tournage</h3><p class="step-preview">Préparer les étapes et le cadre pour que tout avance sans perte de temps.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p>Un bon tournage se planifie à l'avance. Je prépare le <strong>planning</strong>, les <span class="text-mark">listes de shots</span> et coordonne les équipes pour que le jour J se déroule <em>sans accroc</em>.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797867307958383/tournage.png?ex=6a16d903&is=6a158783&hm=4cf38a62fab7f8c5ed4d093474f0c135947bef84aefa986c45140fe0b6dd7a9f&=&format=webp&quality=lossless&width=912&height=513" alt="Planification et organisation du tournage" loading="lazy" decoding="async" width="912" height="513"></div></div><div class="step-label">Structurer</div></div></div></div></div>
+        <div class="step-card" data-step="2"><div class="step-shell"><div class="step-num">03</div><div class="step-main"><h3 class="step-title">✍️ Écrire le script</h3><p class="step-preview">Construire un rythme pensé pour la rétention, le hook et la clarté.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p>Le script, c'est l'<strong>épine dorsale</strong> de ta vidéo. J'apprends à rédiger des scripts pensés pour la <strong>rétention</strong> : <em>accroche percutante</em>, <span class='text-mark'>rythme maîtrisé</span>, <strong>appel à l'action naturel</strong>. Chaque mot compte.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797422934167692/image.png?ex=6a16d899&is=6a158719&hm=01d3305408f57c5548fa1879dcd5590d29169e6807e43c806786be260910f6a0&=&format=webp&quality=lossless&width=912&height=513" alt="Rédaction de scripts pour YouTube" loading="lazy" decoding="async" width="912" height="513"></div></div><div class="step-label">Construire</div></div></div></div></div>
+        <div class="step-card" data-step="3"><div class="step-shell"><div class="step-num">04</div><div class="step-main"><h3 class="step-title">🗂️ Dérush</h3><p class="step-preview">Trier, sélectionner et préparer une base de travail propre pour le montage.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p>Le <strong>dérushage</strong>, c'est trouver <em>l'or</em> dans des heures de rush. J'apprends à sélectionner les <span class='text-mark'>meilleures prises</span>, à organiser les dossiers et à préparer un projet Premiere Pro <strong>propre</strong> et <em>prêt au montage</em>.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797804846387330/derush.png?ex=6a16d8f4&is=6a158774&hm=f692bd943f58a28e207d107d97bbf65aaaad6042b96e737d4b94549aed310d5e&=&format=webp&quality=lossless&width=912&height=513" alt="Dérushage et tri des rushes" loading="lazy" decoding="async" width="912" height="513"></div></div><div class="step-label">Trier</div></div></div></div></div>
+        <div class="step-card" data-step="4"><div class="step-shell"><div class="step-num">05</div><div class="step-main"><h3 class="step-title">✂️ Montage</h3><p class="step-preview">Transformer les rushs en vidéo claire, dense et agréable à regarder.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p><strong>Rythme</strong>, <span class='text-mark'>transitions</span>, <em>sound design</em>, <strong>motion graphics</strong>, <span class='text-mark'>color grading</span> — je transforme des rushes bruts en une vidéo qui <strong>accroche</strong> et <em>retient l'audience</em> jusqu'à la fin.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797827273326612/montage.png?ex=6a16d8fa&is=6a15877a&hm=c9c9b08384ae1350b04f37b5ec7429b0f93a987e26786412348c7dea58d44c7d&=&format=webp&quality=lossless&width=912&height=513" alt="Montage vidéo sur Premiere Pro" loading="lazy" decoding="async" width="912" height="513"></div></div><div class="step-label">Assembler</div></div></div></div></div>
+        <div class="step-card" data-step="5"><div class="step-shell"><div class="step-num">06</div><div class="step-main"><h3 class="step-title">📈 Analyse</h3><p class="step-preview">Lire les signaux clés après publication pour améliorer chaque vidéo suivante.</p></div><div class="step-arrow">→</div></div><div class="step-expand"><div class="step-expand-inner"><div class="step-expand-content"><div class="step-expand-layout"><div class="step-expand-text"><p>Après la publication, le travail continue. J'analyse YouTube Studio en profondeur : <strong>rétention</strong>, <span class='text-mark'>CTR</span>, <em>sources de trafic</em> — pour affiner la <strong>stratégie</strong> à chaque vidéo.</p></div><div class="step-media-box"><img src="https://media.discordapp.net/attachments/1247919957325647955/1508797679168393267/image.png?ex=6a16d8d6&is=6a158756&hm=46f1feebd7c285a5fd96c9d9e9b53cceeebec6d60a1d665dce05c5a8488545b4&=&format=webp&quality=lossless&width=912&height=468" alt="Analyse des performances sur YouTube Analytics" loading="lazy" decoding="async" width="912" height="468"></div></div><div class="step-label">Optimiser</div></div></div></div></div>
       </div>
     </section>
 
     <section class="citation-section section">
-      <div class="citation-bg-bubbles"><img class="bubble-img b1" src="https://media.discordapp.net/attachments/1247919957325647955/1508753630495506482/image.png?ex=6a16afd0&is=6a155e50&hm=654e3643959a5030129c7c364e1f03ad2594675fdb443c07cfc4b1bce0aeeac8&=&format=webp&quality=lossless" alt="Stat screenshot 1"><img class="bubble-img b2" src="https://media.discordapp.net/attachments/1247919957325647955/1508753809222926538/image.png?ex=6a16affb&is=6a155e7b&hm=7bda55466a9470352850a2f871f3928ae09064cd44801e02bafe14ec7194c032&=&format=webp&quality=lossless&width=912&height=456" alt="Stat screenshot 2"><img class="bubble-img b3" src="https://media.discordapp.net/attachments/1247919957325647955/1508753913447186582/image.png?ex=6a16b014&is=6a155e94&hm=16327992572310e682efa3b5e4a002289728cdde5a27cee8e0b08d3997b6f260&=&format=webp&quality=lossless" alt="Stat screenshot 3"><img class="bubble-img b4" src="https://media.discordapp.net/attachments/1247919957325647955/1508754100697829497/image.png?ex=6a16b040&is=6a155ec0&hm=d6c9a78646ee20379635e7b049950be9d26ff024107fe7e607544fa790261b4b&=&format=webp&quality=lossless" alt="Stat screenshot 4"><img class="bubble-img b5" src="https://media.discordapp.net/attachments/1247919957325647955/1508754168125325343/image.png?ex=6a16b050&is=6a155ed0&hm=6d139b84d1ae4dad45056dcb56409a28c908d8d18fb38ce65457716758e6ae35&=&format=webp&quality=lossless" alt="Stat screenshot 5"><img class="bubble-img b6" src="https://media.discordapp.net/attachments/1247919957325647955/1508754286610350160/image.png?ex=6a16b06d&is=6a155eed&hm=bf19e9da10952b8d829b04dccf3923320926df687c3b25856a99938f4bb3ff16&=&format=webp&quality=lossless" alt="Stat screenshot 6"><img class="bubble-img b7" src="https://media.discordapp.net/attachments/1247919957325647955/1508754371112992858/image.png?ex=6a16b081&is=6a155f01&hm=b1d5481c61a3199f681531cf4d608bf3e6a89db05e9ca4853fdbfa9abaadd70b&=&format=webp&quality=lossless" alt="Stat screenshot 7"><img class="bubble-img b8" src="https://media.discordapp.net/attachments/1247919957325647955/1508754528521158686/image.png?ex=6a16b0a6&is=6a155f26&hm=bec5a6b53dbc8df7dd22383d7d289a7433ed81ccf219492431e7f85e01ccdaef&=&format=webp&quality=lossless" alt="Stat screenshot 8"><img class="bubble-img b9" src="https://media.discordapp.net/attachments/1247919957325647955/1508755093900623932/image.png?ex=6a16b12d&is=6a155fad&hm=a85353b78abf8070051d6bf8ac6b79510f9aac92262e4b12f4e791c389157286&=&format=webp&quality=lossless" alt="Stat screenshot 9"></div>
+      <div class="citation-bg-bubbles" aria-hidden="true">
+        <img class="bubble-img b1" src="https://media.discordapp.net/attachments/1247919957325647955/1508753630495506482/image.png?ex=6a16afd0&is=6a155e50&hm=654e3643959a5030129c7c364e1f03ad2594675fdb443c07cfc4b1bce0aeeac8&=&format=webp&quality=lossless&width=540&height=376" alt="" width="270" height="188" loading="lazy" decoding="async">
+        <img class="bubble-img b2" src="https://media.discordapp.net/attachments/1247919957325647955/1508753809222926538/image.png?ex=6a16affb&is=6a155e7b&hm=7bda55466a9470352850a2f871f3928ae09064cd44801e02bafe14ec7194c032&=&format=webp&quality=lossless&width=560&height=332" alt="" width="280" height="166" loading="lazy" decoding="async">
+        <img class="bubble-img b3" src="https://media.discordapp.net/attachments/1247919957325647955/1508753913447186582/image.png?ex=6a16b014&is=6a155e94&hm=16327992572310e682efa3b5e4a002289728cdde5a27cee8e0b08d3997b6f260&=&format=webp&quality=lossless&width=540&height=336" alt="" width="270" height="168" loading="lazy" decoding="async">
+        <img class="bubble-img b4" src="https://media.discordapp.net/attachments/1247919957325647955/1508754100697829497/image.png?ex=6a16b040&is=6a155ec0&hm=d6c9a78646ee20379635e7b049950be9d26ff024107fe7e607544fa790261b4b&=&format=webp&quality=lossless&width=416&height=264" alt="" width="208" height="132" loading="lazy" decoding="async">
+        <img class="bubble-img b5" src="https://media.discordapp.net/attachments/1247919957325647955/1508754168125325343/image.png?ex=6a16b050&is=6a155ed0&hm=6d139b84d1ae4dad45056dcb56409a28c908d8d18fb38ce65457716758e6ae35&=&format=webp&quality=lossless&width=464&height=280" alt="" width="232" height="140" loading="lazy" decoding="async">
+        <img class="bubble-img b6" src="https://media.discordapp.net/attachments/1247919957325647955/1508754286610350160/image.png?ex=6a16b06d&is=6a155eed&hm=bf19e9da10952b8d829b04dccf3923320926df687c3b25856a99938f4bb3ff16&=&format=webp&quality=lossless&width=392&height=244" alt="" width="196" height="122" loading="lazy" decoding="async">
+        <img class="bubble-img b7" src="https://media.discordapp.net/attachments/1247919957325647955/1508754371112992858/image.png?ex=6a16b081&is=6a155f01&hm=b1d5481c61a3199f681531cf4d608bf3e6a89db05e9ca4853fdbfa9abaadd70b&=&format=webp&quality=lossless&width=408&height=252" alt="" width="204" height="126" loading="lazy" decoding="async">
+        <img class="bubble-img b8" src="https://media.discordapp.net/attachments/1247919957325647955/1508754528521158686/image.png?ex=6a16b0a6&is=6a155f26&hm=bec5a6b53dbc8df7dd22383d7d289a7433ed81ccf219492431e7f85e01ccdaef&=&format=webp&quality=lossless&width=520&height=320" alt="" width="260" height="160" loading="lazy" decoding="async">
+        <img class="bubble-img b9" src="https://media.discordapp.net/attachments/1247919957325647955/1508755093900623932/image.png?ex=6a16b12d&is=6a155fad&hm=a85353b78abf8070051d6bf8ac6b79510f9aac92262e4b12f4e791c389157286&=&format=webp&quality=lossless&width=392&height=232" alt="" width="196" height="116" loading="lazy" decoding="async">
+      </div>
       <blockquote class="citation-text reveal" id="citationText">« <span class="cite-highlight-wrap">Ne perds plus des mois à chercher : fais-toi accompagner</span> »<span class="cite-fake-cursor" id="citeCursor"></span></blockquote>
     </section>
 
@@ -770,7 +948,7 @@
       <div class="tarifs-inner">
         <div class="tarifs-head">
           <p class="section-kicker reveal">Tarifs</p>
-          <h2 class="section-title"><span class="title-line"><span>Choisis t'a formule.</span></span></h2>
+          <h2 class="section-title"><span class="title-line"><span>Choisis ta formule.</span></span></h2>
         </div>
         <div id="tarifs-grid-anchor"></div>
         <div class="tarifs-grid">
@@ -950,6 +1128,39 @@
           }
         });
       });
+      var navToggle = document.getElementById("navToggle");
+      var mobileDrawer = document.getElementById("mobileDrawer");
+      function closeDrawer() {
+        if (!mobileDrawer || !navToggle) return;
+        mobileDrawer.classList.remove("open");
+        mobileDrawer.setAttribute("aria-hidden", "true");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Ouvrir le menu");
+        document.body.classList.remove("drawer-open");
+      }
+      function openDrawer() {
+        if (!mobileDrawer || !navToggle) return;
+        mobileDrawer.classList.add("open");
+        mobileDrawer.setAttribute("aria-hidden", "false");
+        navToggle.setAttribute("aria-expanded", "true");
+        navToggle.setAttribute("aria-label", "Fermer le menu");
+        document.body.classList.add("drawer-open");
+      }
+      if (navToggle) {
+        navToggle.addEventListener("click", function () {
+          var isOpen = navToggle.getAttribute("aria-expanded") === "true";
+          if (isOpen) closeDrawer(); else openDrawer();
+        });
+      }
+      if (mobileDrawer) {
+        mobileDrawer.querySelectorAll("[data-drawer-link]").forEach(function (a) {
+          a.addEventListener("click", closeDrawer);
+        });
+      }
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeDrawer();
+      });
+
       var discordBtn = document.getElementById("discordCopy");
       var copyFeedback = document.getElementById("copyFeedback");
       if (discordBtn) {
