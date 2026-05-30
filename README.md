@@ -43,5 +43,6 @@ Ce projet peut être déployé sur n’importe quelle plateforme supportant Node
 
 ## Licence
 
+- Créateur : [LAST](https://www.youtube.com/@Lasteuuuuu).
 - Le **code** est sous licence **MIT** (voir `LICENSE`).
 - Les **images / médias / logos** ne sont **pas** open-source : **tous droits réservés** (voir `NOTICE`).
