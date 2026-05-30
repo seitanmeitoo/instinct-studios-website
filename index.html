@@ -71,6 +71,7 @@
     #intro {
       position: fixed; inset: 0; z-index: 9999; background: linear-gradient(180deg, #1a1a1a 0%, #0b0b0b 28%, #111111 60%, #171717 100%);
       display: flex; align-items: center; justify-content: center;
+      padding: 24px; text-align: center;
       transition: opacity .42s var(--ease), visibility .42s var(--ease), transform .42s var(--ease);
     }
     #intro::before {
@@ -79,20 +80,23 @@
       opacity: .75;
     }
     #intro.exit { opacity: 0; visibility: hidden; transform: scale(1.02); }
-    .intro-logo-wrap { position: relative; z-index: 2; animation: introAppear .82s cubic-bezier(0.22, 1, 0.36, 1) both; }
+    .intro-logo-wrap { position: relative; z-index: 2; max-width: 100%; animation: introAppear .82s cubic-bezier(0.22, 1, 0.36, 1) both; }
     @keyframes introAppear {
       0% { opacity: 0; transform: translateY(16px) scale(.96); filter: blur(8px); }
       100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
     }
     .intro-word-block {
-      font-size: clamp(2.5rem, 8vw, 7rem);
+      font-size: clamp(2rem, 11vw, 7rem);
       font-weight: 900;
       letter-spacing: 0.03em;
       text-transform: uppercase;
       font-family: var(--font-display);
-      line-height: .92;
+      line-height: .98;
       color: #fff;
       font-stretch: normal;
+      max-width: 100%;
+      text-align: center;
+      overflow-wrap: break-word;
       -webkit-text-stroke: 0.5px #fff;
       text-shadow: 0 0 70px rgba(255,255,255,.32), 0 0 140px rgba(255,255,255,.12);
     }
@@ -1573,18 +1577,23 @@
       var N_STARS = 80;
       var GRID_COLS = 20;
       var GRID_ROWS = 14;
+      var CELL = 76;
       var offsetY = 0;
 
       function resize() {
         canvas.width = canvas.offsetWidth || window.innerWidth;
         canvas.height = canvas.offsetHeight || window.innerHeight;
+        // Cellules carrées et adaptatives quel que soit le format d'écran
+        CELL = Math.max(48, Math.min(80, canvas.width / 18));
+        GRID_COLS = Math.ceil(canvas.width / CELL);
+        GRID_ROWS = Math.ceil(canvas.height / CELL);
       }
 
       function initStars() {
         stars = [];
         for (var i = 0; i < N_STARS; i++) {
-          var cx = Math.round(Math.random() * GRID_COLS) * (canvas.width / GRID_COLS);
-          var cy = Math.round(Math.random() * GRID_ROWS) * (canvas.height / GRID_ROWS);
+          var cx = Math.round(Math.random() * GRID_COLS) * CELL;
+          var cy = Math.round(Math.random() * GRID_ROWS) * CELL;
           stars.push({
             x: cx, y: cy,
             r: Math.random() * 1.4 + 0.5,
@@ -1601,9 +1610,9 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         var now = Date.now() / 1000;
 
-        // Grille
-        var cw = canvas.width / GRID_COLS;
-        var ch = canvas.height / GRID_ROWS;
+        // Grille (cellules carrées)
+        var cw = CELL;
+        var ch = CELL;
         offsetY = (offsetY + 0.22) % ch;
         ctx.strokeStyle = 'rgba(255,255,255,0.06)';
         ctx.lineWidth = 1;
