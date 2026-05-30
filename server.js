@@ -51,11 +51,11 @@ app.use(
 
 app.get('/', (req, res) => {
   res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
-  res.sendFile(path.join(__dirname, 'main.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, 'main.html'));
+  res.status(404).sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
